@@ -2,5 +2,82 @@
 @import 'variables';
 
 body {
-    background-color: $color1;
+    background: linear-gradient(to right, $color4, $color6); 
+}
+
+.wrapper {
+    @include wrapper;
+}
+
+html {
+    font-size: 65%;
+}
+
+img {
+    width: 20%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+//FONT
+
+h1 {
+    @include h1Font;
+    padding: 5% auto;
+}
+
+h2 {
+    @include h2Font;
+}
+
+p,
+li {
+    @include pFont;
+}
+
+//HEADER NAV
+
+.headerNav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+.headerNav li {
+    @include allButton;
+}
+.headerNav a {
+    width: 30%;
+    color: $color1;
+}
+
+.headerNav a:hover,
+.headerNav a:active,
+.headerNav a:focus,
+.headerNav a:visited{
+    @include allButtonHover;
+}
+
+//MAIN
+.question {
+    margin: 2.5%;
+    background-color: $color4;
+    padding: 3% 4%;
+}
+
+.question li{
+    margin: 2% auto;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+input[type='radio'] {
+    width: 10%;
+}
+.align {
+    width: 80%;
 }

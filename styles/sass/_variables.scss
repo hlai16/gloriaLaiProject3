@@ -1,11 +1,11 @@
 // Color scheme
 
 $color1: #effcea;
-$color2: #9b6206;
+$color2: #a35f06;
 $color3: #1e7f0d;
-$color4: #fff;
-$color5: rgba(1, 8, 0, 0.719);
-$color6: #eaf7eb;
+$color4: rgba(255, 255, 255, 0.479);
+$color5: rgb(1, 8, 0);
+$color6: #06e6e6ab;
 
 // Fonts
 
@@ -18,25 +18,26 @@ h4,
 h5,
 h6,
 button,
-.button {
+.button,
+li {
     font-family: $hFF;
 }
 
-@mixin h1Font($h1Color:white){
+@mixin h1Font($h1Color: $color3){
     font-size: 50px;
     color: $h1Color;
-    padding-left: 9.5%;
-    text-shadow: 2px 2px 2px $color5;
+    text-align: center;
+    text-shadow: 2px 2px 2px $color1;
 }
 
 @mixin h1FontMQPS { //Media Query Smartphone Portrait
-    font-size: 40px;
+    font-size: 60px;
     line-height: 200%;
     max-width: 80%;
 }
 
 @mixin h1FontMQLS { //Media Query Smartphone Landscape
-    font-size: 35px;
+    font-size: 55px;
     line-height: 150%;
     max-width: 100%;
 }
@@ -46,30 +47,32 @@ button,
     max-width: 90%;
 }
 
-@mixin h2Font($h2Color: $color3) {
-    font-size: 40px;
+@mixin h2Font($h2Color: $color2) {
+    font-size: 35px;
     line-height: 80px;
     color: $h2Color;
+    text-shadow: 2px 2px 2px $color1;
 }
 
 @mixin h3Font($h3FS: 30px, $h3Color: $color4) {
     font-size: $h3FS;
-    line-height: 38px;
+    line-height: 48px;
     letter-spacing: 1.3px;
     color: $h3Color;
 }
 
 @mixin h4Font {
-    font-size: 25px;
+    font-size: 35px;
     line-height: 30px;
     letter-spacing: .8px;
     color: $color2;
 }
 
-@mixin pFont($pColor: rgb(2, 2, 51), $pFS: 20px) {
+@mixin pFont($pColor: $color5, $pFS: 25px) {
     font-family: 'Roboto', sans-serif;
     font-size: $pFS;
     letter-spacing: 1px;
+    line-height: 30px;
     color: $pColor;
 }
 
@@ -79,25 +82,27 @@ button,
      margin: 0 auto;
  }
 
-//  headerHero mixin
-@mixin headerHero($heroHeight:100vh) {
+//  Hero mixin
+@mixin hero($heroHeight:100vh) {
     background-color: $color3;
     background-size: cover;
     background-position: center;
     height: $heroHeight;
 }
 
-@mixin allButton($buttonBgc: $color2, $buttonC: $color3){
+@mixin allButton($buttonBgc: $color3, $buttonC: $color1){
     background-color: $buttonBgc;
     color: $buttonC;
-    padding: 2.5% 5%;
-    font-size: 100%;
+    padding: 1.5% 2.5%;
     text-align: center;
-    line-height: 41.6px;
-    margin: 10% auto;
+    line-height: 35.6px;
+    font-size: 20px;
+    margin: 5%;
+    border: 5px solid $color2;
+    border-radius: 50%;
+    box-shadow: 5px 5px 2px $color1;
 }
 
-@mixin allButtonHover($buttonBgcH: $color4, $borderCH: $color2){
-    background-color: $buttonBgcH;
-    border: 5px solid $borderCH;
+@mixin allButtonHover($borderCH: $color6){
+    border-bottom: 2.5px solid $borderCH;
 }
