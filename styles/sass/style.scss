@@ -15,6 +15,7 @@ html {
 
 img {
     width: 20%;
+    margin-right: 5%;
 }
 
 li {
@@ -104,9 +105,6 @@ button:visited {
 .moreInfoNav li {
     display: flex;
     align-items: center;
-    margin: 2.5%;
-}
-.moreInfoNav a {
     margin: 5%;
 }
 
@@ -159,5 +157,11 @@ footer {
     h2 {
         @include h2FontMQPS;
     }
-
+    .moreInfoNav a{
+        font-size: 18px;
+    }
+    .moreInfoNav,
+    .moreInfo {
+         margin: 1.5%;
+    }
 }

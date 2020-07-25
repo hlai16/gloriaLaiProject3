@@ -264,6 +264,7 @@ html {
 
 img {
   width: 20%;
+  margin-right: 5%;
 }
 
 li {
@@ -394,10 +395,6 @@ button:visited {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 2.5%;
-}
-
-.moreInfoNav a {
   margin: 5%;
 }
 
@@ -444,5 +441,12 @@ footer {
   h2 {
     font-size: 25px;
     line-height: 40px;
+  }
+  .moreInfoNav a {
+    font-size: 18px;
+  }
+  .moreInfoNav,
+  .moreInfo {
+    margin: 1.5%;
   }
 }
