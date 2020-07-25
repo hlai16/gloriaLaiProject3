@@ -55,11 +55,12 @@ li {
     color: $color1;
 }
 
-.headerNav a:hover,
-.headerNav a:active,
-.headerNav a:focus,
-.headerNav a:visited{
+.headerNav li:hover,
+.headerNav li:active,
+.headerNav li:focus,
+.headerNav li:visited{
     @include allButtonHover;
+    box-shadow: 5px 5px 2px $color3;
 }
 
 //MAIN
@@ -80,4 +81,38 @@ input[type='radio'] {
 }
 .align {
     width: 80%;
+}
+
+button {
+    @include allButton;
+}
+
+button:hover,
+button:active,
+button:focus,
+button:visited {
+    @include allButtonHover;
+}
+
+//MORE INFO SECTION
+.moreInfo h2,
+.moreInfoNav,
+.moreInfo {
+    margin: 5%;
+}
+
+.moreInfoNav li {
+    display: flex;
+    align-items: center;
+    margin: 2.5%;
+}
+.moreInfoNav a {
+    margin: 5%;
+}
+
+//FOOTER
+footer {
+    margin: 10%;
+    background-color: $color6;
+    padding: 1.25% 3%;
 }

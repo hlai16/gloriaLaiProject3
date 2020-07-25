@@ -255,6 +255,7 @@ body {
 .wrapper {
   max-width: 95%;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 html {
@@ -325,11 +326,13 @@ li {
   color: #effcea;
 }
 
-.headerNav a:hover,
-.headerNav a:active,
-.headerNav a:focus,
-.headerNav a:visited {
+.headerNav li:hover,
+.headerNav li:active,
+.headerNav li:focus,
+.headerNav li:visited {
   border-bottom: 2.5px solid #06e6e6ab;
+  -webkit-box-shadow: 5px 5px 2px #1e7f0d;
+          box-shadow: 5px 5px 2px #1e7f0d;
 }
 
 .question {
@@ -355,4 +358,51 @@ input[type='radio'] {
 
 .align {
   width: 80%;
+}
+
+button {
+  background-color: #1e7f0d;
+  color: #effcea;
+  padding: 1.5% 2.5%;
+  text-align: center;
+  line-height: 35.6px;
+  font-size: 20px;
+  margin: 5%;
+  border: 5px solid #a35f06;
+  border-radius: 50%;
+  -webkit-box-shadow: 5px 5px 2px #effcea;
+          box-shadow: 5px 5px 2px #effcea;
+}
+
+button:hover,
+button:active,
+button:focus,
+button:visited {
+  border-bottom: 2.5px solid #06e6e6ab;
+}
+
+.moreInfo h2,
+.moreInfoNav,
+.moreInfo {
+  margin: 5%;
+}
+
+.moreInfoNav li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2.5%;
+}
+
+.moreInfoNav a {
+  margin: 5%;
+}
+
+footer {
+  margin: 10%;
+  background-color: #06e6e6ab;
+  padding: 1.25% 3%;
 }
