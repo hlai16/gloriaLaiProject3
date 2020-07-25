@@ -112,7 +112,52 @@ button:visited {
 
 //FOOTER
 footer {
-    margin: 10%;
     background-color: $color6;
     padding: 1.25% 3%;
+}
+
+
+//MEDIA QUERIES
+@media (max-width: 900px){
+    html {
+        font-size: 50%;
+    }
+    .question li{
+        margin: 4% auto;
+    }
+
+    h2 {
+        @include h2FontMQLS;
+    }
+}
+
+@media (max-width: 600px){
+    html {
+        font-size: 45%;
+    }
+
+    .headerNav{
+        display: none;
+    }
+
+    h1,
+    header {
+        margin-top: 10%;
+    }
+
+    .question {
+        padding: 3% 1%;
+    }
+
+    .question li{
+        margin: 10% auto;
+    }
+
+    input[type='radio'] {
+        width: 10%;
+    }
+    h2 {
+        @include h2FontMQPS;
+    }
+
 }

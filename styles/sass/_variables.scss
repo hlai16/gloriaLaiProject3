@@ -30,21 +30,16 @@ li {
     text-shadow: 2px 2px 2px $color1;
 }
 
-@mixin h1FontMQPS { //Media Query Smartphone Portrait
-    font-size: 60px;
-    line-height: 200%;
-    max-width: 80%;
+@mixin h2FontMQPS { //Media Query Smartphone Portrait
+    font-size: 25px;
+    line-height: 40px;
 }
 
-@mixin h1FontMQLS { //Media Query Smartphone Landscape
-    font-size: 55px;
-    line-height: 150%;
+@mixin h2FontMQLS { //Media Query Smartphone Landscape
+    font-size: 30px;
+    line-height: 50px;
     max-width: 100%;
-}
-@mixin h1FontMQLE { //Media Query Ebook Landscape
-    font-size: 45px;
-    line-height: 180%;
-    max-width: 90%;
+    padding-top: 5%;
 }
 
 @mixin h2Font($h2Color: $color2) {
@@ -54,19 +49,6 @@ li {
     text-shadow: 2px 2px 2px $color1;
 }
 
-@mixin h3Font($h3FS: 30px, $h3Color: $color4) {
-    font-size: $h3FS;
-    line-height: 48px;
-    letter-spacing: 1.3px;
-    color: $h3Color;
-}
-
-@mixin h4Font {
-    font-size: 35px;
-    line-height: 30px;
-    letter-spacing: .8px;
-    color: $color2;
-}
 
 @mixin pFont($pColor: $color5, $pFS: 25px) {
     font-family: 'Roboto', sans-serif;
@@ -83,13 +65,6 @@ li {
      overflow: hidden;
  }
 
-//  Hero mixin
-@mixin hero($heroHeight:100vh) {
-    background-color: $color3;
-    background-size: cover;
-    background-position: center;
-    height: $heroHeight;
-}
 
 @mixin allButton($buttonBgc: $color3, $buttonC: $color1){
     background-color: $buttonBgc;

@@ -402,7 +402,47 @@ button:visited {
 }
 
 footer {
-  margin: 10%;
   background-color: #06e6e6ab;
   padding: 1.25% 3%;
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 50%;
+  }
+  .question li {
+    margin: 4% auto;
+  }
+  h2 {
+    font-size: 30px;
+    line-height: 50px;
+    max-width: 100%;
+    padding-top: 5%;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 45%;
+  }
+  .headerNav {
+    display: none;
+  }
+  h1,
+  header {
+    margin-top: 10%;
+  }
+  .question {
+    padding: 3% 1%;
+  }
+  .question li {
+    margin: 10% auto;
+  }
+  input[type='radio'] {
+    width: 10%;
+  }
+  h2 {
+    font-size: 25px;
+    line-height: 40px;
+  }
 }
