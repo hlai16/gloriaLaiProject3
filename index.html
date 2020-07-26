@@ -29,11 +29,12 @@
     <main>
         <div class="wrapper">
             <form action="#">
-                <div class="question question1">
+                <div class="question questionOne">
                     <h2>What is Biochar?</h2>
                     <ul>
                         <li>
-                            <input type="radio" name="options" id="option" class="radio radio1"> <span class="align">A
+                            <label for="question1" class="sr-only">Option A</label>
+                            <input type="radio" name="question1" value="option1" class="radio radio1"> <span class="align">A
                                 rediscovered
                                 solution
                                 for
@@ -43,27 +44,31 @@
                                 CO2.</span>
                         </li>
                         <li>
-                            <input type="radio" name="options" id="option" class="radio radio2"> <span class="align">A
+                            <label for="question1" class="sr-only">Option B</label>
+                            <input type="radio" name="question1" value="option2" class="radio radio2"> <span class="align">A
                                 highly
                                 combustible
                                 charcoal material for barbecue and amazing bonfire.</span>
                         </li>
                         <li>
-                            <input type="radio" name="options" id="option" class="radio radio3"> <span
+                            <label for="question1" class="sr-only">Option C</label>
+                            <input type="radio" name="question1" value="option3" class="radio radio3"> <span
                                 class="align">Black Gold
                                 💰💰💰💰💰💰💰💰💰</span>
                         </li>
                     </ul>
-                    <button>Submit</button>
-                    <div class="answer">
+                    <a href="#question2" class="button"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>
+                    <div class="answer answer1">
                         <!-- use js to display answer -->
+                        <p></p>
                     </div>
                 </div>
-                <div class="question question2">
+                <div class="question questionTwo" id="question2">
                     <h2>What is Cultured Meat?</h2>
                     <ul>
                         <li>
-                            <input type="radio" name="options" id="option" class="radio radio1"> <span
+                            <label for="question2" class="sr-only">Option A</label>
+                            <input type="radio" name="question2" value="option1" class="radio radio1"> <span
                                 class="align">Pasteurized meat. AAA+
                                 Food
                                 grade. Meat packaging has applied the use of cold compressors to let the aroma and the
@@ -71,13 +76,15 @@
                                 of meat retained longer than average produced meat.</span>
                         </li>
                         <li>
-                            <input type="radio" name="options" id="option" class="radio radio2"> <span
+                            <label for="question2" class="sr-only">Option B</label>
+                            <input type="radio" name="question2" value="option2" class="radio radio2"> <span
                                 class="align">Vertical livestock
                                 farming
                                 technique. You know? Same idea as in vertical growing your veggies on your wall.</span>
                         </li>
                         <li>
-                            <input type="radio" name="options" id="option" class="radio radio3"> <span
+                            <label for="question2" class="sr-only">Option C</label>
+                            <input type="radio" name="question2" value="option3" class="radio radio3"> <span
                                 class="align">A.k.a. lab-grown meat.
                                 Meat
                                 is produced using stem-cell technology. A much sanitized, cost-efficient, sustainable
@@ -85,31 +92,35 @@
                                 of producing meat for us to eat.</span>
                         </li>
                     </ul>
-                    <button>Submit</button>
-                    <div class="answer">
+                    <a href="#question3" class="button"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>
+                    <div class="answer answer2">
                         <!-- use js to display answer -->
+                        <p></p>
                     </div>
                 </div>
-                <div class="question question3">
+                <div class="question questionThree" id="question3">
                     <h2>Would you like to learn more about Biochar and Cultured meat????</h2>
                     <ul>
                         <li>
-                            <input type="radio" name="options" id="option" class="radio radio1"> <span class="align">Yes
+                            <label for="question3" class="sr-only">Option A</label>
+                            <input type="radio" name="question3" value="option1" class="radio radio1" checked> <span class="align">Yes
                                 please. 😊</span>
                         </li>
                         <li>
-                            <input type="radio" name="options" id="option" class="radio radio2"> <span
+                            <label for="question3" class="sr-only">Option B</label>
+                            <input type="radio" name="question3" value="option2" class="radio radio2"> <span
                                 class="align">Yes. Yes. Yes. 😲😲😆😆</span>
                         </li>
                         <li>
-                            <input type="radio" name="options" id="option" class="radio radio3"> <span class="align">Of
+                            <label for="question3" class="sr-only">Option C</label>
+                            <input type="radio" name="question3" value="option3" class="radio radio3"> <span class="align">Of
                                 course!!!!! I am so
                                 excited
                                 that finally there are viable solutions to save the planet!!! 🌻🌻🌻🤩🤩🙌🙌🙌</span>
                         </li>
                     </ul>
                     <button>Submit</button>
-                    <div class="answer">
+                    <div class="answer answer3">
                         <!-- use js to display answer -->
                     </div>
                 </div>

@@ -275,6 +275,13 @@ a {
   text-decoration: none;
 }
 
+.question,
+.results {
+  border-radius: 5%;
+  border-bottom-right-radius: 25%;
+  border-right: 1rem solid #1e7f0d;
+}
+
 h1 {
   font-size: 50px;
   color: #1e7f0d;
@@ -361,7 +368,8 @@ input[type='radio'] {
   width: 80%;
 }
 
-button {
+button,
+.button {
   background-color: #1e7f0d;
   color: #effcea;
   padding: 1.5% 2.5%;
@@ -378,8 +386,30 @@ button {
 button:hover,
 button:active,
 button:focus,
-button:visited {
+button:visited,
+.button:hover,
+.button:active,
+.button:focus {
   border-bottom: 2.5px solid #06e6e6ab;
+}
+
+.answer p {
+  text-align: center;
+  text-shadow: 2px 2px 5px #1e7f0d;
+  color: #010800;
+}
+
+.results {
+  border: 5px dashed orangered;
+  margin: 5%;
+}
+
+.results p {
+  margin-left: 5%;
+}
+
+.finalScore {
+  background-color: yellow;
 }
 
 .moreInfo h2,

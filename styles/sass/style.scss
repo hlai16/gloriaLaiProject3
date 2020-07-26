@@ -26,6 +26,13 @@ a {
     text-decoration: none;
 }
 
+.question,
+.results {
+    border-radius: 5%;
+    border-bottom-right-radius: 25%;
+    border-right: 1rem solid $color3;
+}
+
 //FONT
 
 h1 {
@@ -84,15 +91,40 @@ input[type='radio'] {
     width: 80%;
 }
 
-button {
+button,
+.button {
     @include allButton;
 }
 
 button:hover,
 button:active,
 button:focus,
-button:visited {
+button:visited,
+.button:hover,
+.button:active,
+.button:focus{
     @include allButtonHover;
+}
+
+//ANSWER DIV
+.answer p {
+    text-align: center;
+    text-shadow: 2px 2px 5px $color3;
+    color: $color5;
+}
+
+//RESULTS SECTION
+.results {
+    border: 5px dashed orangered;
+    margin: 5%;
+}
+
+.results p {
+    margin-left: 5%;
+}
+
+.finalScore {
+    background-color: yellow;
 }
 
 //MORE INFO SECTION
